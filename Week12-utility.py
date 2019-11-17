@@ -20,3 +20,11 @@ def UpdateString(string1, string2, index):
         else:
             new += string1[i]
     PrintOutput(new)
+
+def FindWordCount(user_list, user_string):
+    count = 0
+    for i in user_list:
+        split = i.split()
+        if user_string in split:
+            count += 1
+    return count
