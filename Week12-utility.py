@@ -2,3 +2,7 @@
 # Seth Deibert
 # CSCI 102 - Section E
 # Week 12 - Part B
+
+def PrintOutput(input_string):
+    print("OUTPUT", input_string)
+
