@@ -6,3 +6,8 @@
 def PrintOutput(input_string):
     print("OUTPUT", input_string)
 
+def LoadFile(file_name):
+    f = open(file_name, 'r')
+    content = f.read().splitlines()
+    f.close()
+    return content
