@@ -39,3 +39,14 @@ def ScoreFinder(players, scores, name):
         PrintOutput(str(players[index]) + " got a score of " + str(scores[index]))
     elif not player_exists :
         PrintOutput("player not found")
+
+def Union(list1, list2):
+    combined = []
+    for i in list1:
+        if i not in list2 and i not in combined:
+            combined.append(i)
+    for j in list2:
+        if j not in list1 and j not in combined:
+            combined.append(j)
+    return combined
+            
