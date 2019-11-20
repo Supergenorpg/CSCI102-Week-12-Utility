@@ -28,3 +28,14 @@ def FindWordCount(user_list, user_string):
         if user_string in split:
             count += 1
     return count
+
+def ScoreFinder(players, scores, name):
+    player_exists = False
+    for i in range(len(players)):
+        if name.lower() == players[i].lower():
+            player_exists = True
+            index = i
+    if player_exists:
+        PrintOutput(str(players[index]) + " got a score of " + str(scores[index]))
+    elif not player_exists :
+        PrintOutput("player not found")
