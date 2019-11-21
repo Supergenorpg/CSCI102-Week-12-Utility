@@ -49,4 +49,11 @@ def Union(list1, list2):
         if j not in list1 and j not in combined:
             combined.append(j)
     return combined
-            
+
+def Intersection(list1, list2):
+    intersected = []
+    for i in list1:
+        if i in list2 and i in list1 and i not in intersected:
+            intersected.append(i)
+    return intersected
+
